@@ -1,4 +1,5 @@
 import { useEffect, useState} from "react";
+import styled from "styled-components";
 
 function Popular() {
     
@@ -18,7 +19,7 @@ function Popular() {
         <div>
             {popular.map((recipe) => {
             return (
-                <div>
+                <div key={recipe.id}>
                     <p>{recipe.title}</p>
                 </div>
                 );
